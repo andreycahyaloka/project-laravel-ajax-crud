@@ -143,7 +143,7 @@
 
 	// index function
 	function indexAjax() {
-		// clear table data
+		// clear data
 		$('#tbodyData').empty();
 
 		$.ajax( {

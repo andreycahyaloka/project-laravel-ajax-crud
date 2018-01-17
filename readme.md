@@ -14,12 +14,6 @@ jquery <br />
 font_awesome <br />
 4.7.0 <br />
 
-// datatables <br />
-// 1.10.16 <br />
-
-// composer require yajra/laravel-datatables-oracle:"~8.0" <br />
-// 8.3.2 <br />
-
 
 
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>

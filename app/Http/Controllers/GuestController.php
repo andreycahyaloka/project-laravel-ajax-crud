@@ -23,7 +23,7 @@ class GuestController extends Controller
         //
 		$posts = Post::
 			orderBy('title', 'asc')
-			->paginate(10);
+			->paginate(1);
 
 		// diedump (dump and die)
 		// dd($data);
@@ -35,8 +35,8 @@ class GuestController extends Controller
 	public function indexAjax() {
 		try {
 			return Post::
-				orderBy('title', 'asc')
-				->get();
+					orderBy('title', 'asc')
+					->get();
 		}
 		catch(Exception $e) {
 			return 'false';

@@ -16,18 +16,18 @@
 					<div class="form-row">
 						<div class="col-md-6">
 							<h4 class="card-title">List</h4>
-							<h6 class="card-subtitle mb-2 text-muted">
-								{{ $posts->total() }} Post(s) ({{ $posts->lastItem() }} of {{ $posts->total() }})
+							<h6 class="card-subtitle mb-2 text-muted" id="myCardSubtitle">
+								<!--  -->
 							</h6>
 						</div>
 						<div class="col-sm-offset-4 col-md-2">
-							<button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#myModalCreate">
+							<button type="button" class="btn btn-outline-primary btn-block mb-2" data-toggle="modal" data-target="#myModalCreate">
 								<i class="fa fa-plus"></i> New Post
 							</button>
 						</div>
 					</div>
 
-					<p class="card-text">
+					<p class="card-text mb-0 pb-0">
 						<div class="table-responsive">
 							<table class="table table-striped table-hover">
 								<thead>
@@ -79,7 +79,7 @@
 				</div>
 
 				<div class="card-footer border-dark bg-transparent mb-0 mt-0 pb-0 pt-0">
-					{{-- $posts->links() --}}
+					<!--  -->
 				</div>
 			</div>
 		</div>
@@ -195,6 +195,7 @@
 						<div class="form-group">
 							<label class="mb-3">Are you sure you want to delete this post?</label>
 							<input type="text" class="form-control" name="titleDelete" id="titleDelete" readonly />
+							<input type="hidden" name="idDelete" id="idDelete" value="" disabled="" />
 						</div>
 				</div>
 				<div class="modal-footer">
